@@ -29,6 +29,7 @@ const { push } = useRouter();
 **5) 아래 스크린샷을 참고하여 앱을 작성한다.**
 
 
+
 ## 1. 프로젝트 초기 환경설정
 
 ### 1.1. vite 템플릿을 이용하여 react + ts 프로젝트 생성하기
@@ -41,10 +42,35 @@ yarn create vite react-vite-t1 --template react-ts
 npx eslint --init
 ```
 
-## 2. 페이지 생성
+## 2. 소스 구조
+```
+src/
+├── App.css
+├── App.tsx
+├── assets
+│   └── react.svg
+├── components      // 라우터 컴포넌트
+│   ├── index.ts
+│   ├── route.tsx
+│   └── router.tsx
+├── hooks
+│   └── useRouter.tsx
+├── index.css
+├── main.tsx
+├── pages          // 페이지 관련 폴더
+│   ├── about
+│   └── root
+└── vite-env.d.ts
+```
+
+## 3. 결과 페이지
+Root Page
+![Root Page](https://github.com/GowoonJ/react-router/assets/39857106/e60a6838-4974-4c3d-86cd-476a2f85953b)
+About Page
+![About Page](https://github.com/GowoonJ/react-router/assets/39857106/8b06512d-1e5c-4d88-84ce-675bfb50cca9)
 
 
 
 #### 참고 문서
-- https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/index.tsx
-- VanillaJS를 이용한 SPA에서 라우팅을 구현하는 방법 (feat. history API)[https://bokjiho.medium.com/vanillajs%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-spa%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9A%B0%ED%8C%85%EC%9D%84-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-feat-history-api-4b5e3a3af185]
+- [react-router-dom github Repo](https://github.com/remix-run/react-router/blob/main/packages/react-router-dom/index.tsx)
+- [VanillaJS를 이용한 SPA에서 라우팅을 구현하는 방법(feat. history API)](https://bokjiho.medium.com/vanillajs%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-spa%EC%97%90%EC%84%9C-%EB%9D%BC%EC%9A%B0%ED%8C%85%EC%9D%84-%EA%B5%AC%ED%98%84%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95-feat-history-api-4b5e3a3af185)
